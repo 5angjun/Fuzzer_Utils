@@ -13,4 +13,4 @@ for count in {01..23}; do cd ~/xpdf-4.04/xpdf/out_pdfinfo/fuzzer${count}/crashes
 ```
 cat /root/gdb_log
 ```
-<p>[##_Image|kage@d891No/btrFFPjqOoa/xv5Zv7CBjRMvsRykhQ3xQ0/img.png|CDM|1.3|{"originWidth":1920,"originHeight":1080,"style":"alignCenter","filename":"Screenshot from 2022-06-24 15-24-49.png"}_##]</p>
+![ex_screenshot](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd891No%2FbtrFFPjqOoa%2Fxv5Zv7CBjRMvsRykhQ3xQ0%2Fimg.png)
