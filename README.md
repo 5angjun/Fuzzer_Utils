@@ -1,6 +1,10 @@
 # Fuzzer_Utils
 Fuzzer Utils to save times
 
+## 목적: 크래시 파일을 자동으로 gdb에 돌려 gdb결과를 파일에 저장
+
+## 구현 : 부모프로세스와 자식 프로세스가 파이프 통신을 통해 자식의 stdout과 stderr을 기록한다.
+
 
 # How to use
 
