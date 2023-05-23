@@ -38,6 +38,7 @@ NTSTATUS crashMe2(PDEVICE_OBJECT pDevObj, PIRP pIrp)
 		{
 			if (buff[2] == 'U')
 			{
+				crash_sequence = 1;
 				//if (buff[3] == 'D')
 				//{
 				//	if (buff[4] == 'E')
@@ -46,10 +47,10 @@ NTSTATUS crashMe2(PDEVICE_OBJECT pDevObj, PIRP pIrp)
 				//		{
 				//			if (buff[6] == 'G')
 				//			{
-								if (crash_sequence == 0)
-									crash_sequence = 1;
-								else
-									crash_sequence = 0;
+								//if (crash_sequence == 0)
+								//	crash_sequence = 1;
+								//else
+								//	crash_sequence = 0;
 					//		}
 					//	}
 					//}
@@ -57,7 +58,8 @@ NTSTATUS crashMe2(PDEVICE_OBJECT pDevObj, PIRP pIrp)
 			}
 		}
 	}
-
+	else
+		crash_sequence = 0;
 
 	return STATUS_SUCCESS;
 }
